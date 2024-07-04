@@ -11,8 +11,12 @@
             "id": "5647eac4502817bb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 282.5
   },
   "right": {
     "id": "673e0ac315ba7f63",
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md"
+              }
             }
           }
         ]
@@ -139,5 +147,10 @@
     }
   },
   "active": "5647eac4502817bb",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "[[mạng.md",
+    "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
+    "1. What is deep learning/Chú thích/data points.md",
+    "1. What is deep learning/A brief history of machine learning.md"
+  ]
 }
