@@ -1,0 +1,1 @@
+Máy tính <span style="color:rgb(66, 255, 242)">học trên <span style="color:rgb(66, 255, 242)">dữ liệu đã được gán nhãn</span></span> (label), hay nói cách khác, với mỗi đầu vào $X_i$, chúng ta sẽ có nhãn $Y_i$ tương ứng.

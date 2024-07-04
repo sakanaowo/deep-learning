@@ -1,0 +1,2 @@
+- <span style="color:rgb(0, 176, 240)">điểm dữ liệu</span>, mỗi điểm dữ liệu biểu diễn cho một quan sát. Mỗi data point có nhiều đặc trưng hay thuộc tính khác nhau,
+- được chia làm <span style="color:rgb(255, 255, 0)">hai loại</span>: <span style="color:rgb(0, 176, 240)">dữ liệu số</span> (numerical) và <span style="color:rgb(0, 176, 240)">dữ liệu không phải số</span> (ví dụ như chuỗi) (non-numerical/categorical). Data point được biểu diễn thành dòng tương ứng, mỗi dòng có thể có 1 hoặc nhiều dữ liệu (chính là các đặc trưng).

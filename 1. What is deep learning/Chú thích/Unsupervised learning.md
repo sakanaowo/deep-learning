@@ -1,0 +1,2 @@
+- Máy tính <span style="color:rgb(66, 255, 242)">học trên dữ liệu không được gán nhãn</span>
+- Các thuật toán machine learning sẽ <span style="color:rgb(66, 255, 242)">tìm ra sự tương quan dữ liệu</span>, <span style="color:rgb(66, 255, 242)">mô hình hóa dữ liệu</span> hay chính là làm cho máy tính có kiến thức, hiểu về dữ liệu, từ đó chúng có thể phân loại các dữ liệu về sau thành các nhóm, lớp (clustering) giống nhau mà chúng đã được học hoặc giảm số chiều dữ liệu (dimension reduction).
