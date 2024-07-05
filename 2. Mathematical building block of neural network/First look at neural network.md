@@ -31,8 +31,8 @@ và tập dữ liệu 'test_images':
 array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)
 ```
 
-### Kiến trúc mạng 
-Quy trình làm việc sẽ như sau: Đầu tiên, chúng ta sẽ cung cấp cho mạng neural dữ liệu huấn luyện, bao gồm `train_images` và `train_labels`. Mạng sẽ học cách liên kết hình ảnh và nhãn. Cuối cùng, chúng ta sẽ yêu cầu mạng đưa ra dự đoán cho `test_images` và kiểm tra xem các dự đoán này có khớp với nhãn từ `test_labels` hay không.
+### Tạo kiến trúc mạng 
+Quy trình làm việc sẽ như sau: Đầu tiên, chúng ta sẽ cung cấp cho mạng neural dữ liệu huấn luyện, bao gồm `train_images` và `train_labels`. Mạng sẽ học cách liên kết hình ảnh và _labels_. Cuối cùng, chúng ta sẽ yêu cầu mạng đưa ra dự đoán cho `test_images` và kiểm tra xem các dự đoán này có khớp với nhãn từ `test_labels` hay không.
 
 Build network(chưa cần thực sự hiểu đoạn này):
 ```
