@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5647eac4502817bb",
+            "id": "962681212b4c630d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Mathematical building block of neural network/First look at neural network.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "abb6448e240469d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
+                "file": "2. Mathematical building block of neural network/First look at neural network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
+                "file": "2. Mathematical building block of neural network/First look at neural network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md"
+                "file": "2. Mathematical building block of neural network/First look at neural network.md"
               }
             }
           }
@@ -146,11 +158,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5647eac4502817bb",
+  "active": "962681212b4c630d",
   "lastOpenFiles": [
-    "[[mạng.md",
+    "2. Mathematical building block of neural network/Mở đầu chương.md",
+    "2. Mathematical building block of neural network/First look at neural network.md",
+    "1. What is deep learning/Chú thích/optimizer.md",
     "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
-    "1. What is deep learning/Chú thích/data points.md",
-    "1. What is deep learning/A brief history of machine learning.md"
+    "Image/Pasted image 20240705144634.png",
+    "1. What is deep learning/Chú thích/loss function.md",
+    "1. What is deep learning/A brief history of machine learning.md",
+    "1. What is deep learning/Chú thích/Supervised learning.md",
+    "[[mạng.md",
+    "1. What is deep learning/Chú thích/data points.md"
   ]
 }

@@ -1,0 +1,124 @@
+Ví dụ cụ thể sẽ sử dụng thư viện Python Keras để học cách phân loại chữ số viết tay. Vấn đề cần giải quyết là phân loại hình ảnh grayscale của chữ số viết tay (28 × 28 pixel) vào 10 loại (0 đến 9) bằng cách sử dụng tập dữ liệu [MNIST](https://vi.wikipedia.org/wiki/C%C6%A1_s%E1%BB%9F_d%E1%BB%AF_li%E1%BB%87u_MNIST) . 
+![[Pasted image 20240705144634.png]]
+
+Để giải quyết ví dụ này thì chúng ta cần thiết lập một deep learning workspace (sẽ được đề cập ở [chương 3]()). Tập dữ liệu MNIST được dựng sẵn trong Keras, dưới dạng 4 Numpy array.
+
+### Loading MNIST dataset từ Keras 
+```
+from tensorflow.keras.datasets import mnist
+(train_images,train_labels), (test-images, test_labels) = mnist.load_data()
+```
+
+Tập dữ liệu _training_ gồm `train_images` và `train_labels`, là dữ liệu mà mô hình sẽ học từ đó. Sau khi huấn luyện, mô hình sẽ được kiểm tra trên tập dữ liệu _test_, gồm `test_images` và `test_labels`.
+Hình ảnh được mã hóa dưới dạng Numpy array, và _labels_ là mảng số trong khoảng 0 -> 9. Hình ảnh và _labels_ sẽ là các tương ứng 1-1.
+
+Dưới đây là tập dữ liệu 'train_images':
+```
+>>> train_images.shape
+(60000,28,28)
+>>> len(train_labels)
+60000
+>>> train_labels
+array([5,0,4,...,5,6,8],dtype=unit8)
+```
+
+và tập dữ liệu 'test_images':
+```
+>>> test_images.shape (10000, 28, 28) 
+>>> len(test_labels) 
+10000 
+>>> test_labels 
+array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)
+```
+
+### Kiến trúc mạng 
+Quy trình làm việc sẽ như sau: Đầu tiên, chúng ta sẽ cung cấp cho mạng neural dữ liệu huấn luyện, bao gồm `train_images` và `train_labels`. Mạng sẽ học cách liên kết hình ảnh và nhãn. Cuối cùng, chúng ta sẽ yêu cầu mạng đưa ra dự đoán cho `test_images` và kiểm tra xem các dự đoán này có khớp với nhãn từ `test_labels` hay không.
+
+Build network(chưa cần thực sự hiểu đoạn này):
+```
+from tensorflow import keras 
+from tensorflow.keras import layers 
+model = keras.Sequential([ 
+	layers.Dense(512, activation="relu"), 
+	layers.Dense(10, activation="softmax") 
+])
+```
+
+Lớp (layer) là cốt lõi của mạng neural, hoạt động như một bộ lọc dữ liệu. Các lớp trích xuất các biểu diễn từ dữ liệu để giải quyết vấn đề một cách hiệu quả hơn. Mô hình học sâu là một chuỗi các lớp kết hợp với nhau.
+Ở đây, mô hình của chúng ta bao gồm một chuỗi hai lớp Dense, là các lớp neural kết nối dày đặc (còn được gọi là fully connected). Lớp thứ hai (và cuối cùng) là một lớp phân loại softmax 10 chiều, có nghĩa là nó sẽ trả về  một mảng gồm 10 điểm xác suất (tổng cộng là 1). Mỗi điểm xác suất sẽ là xác suất rằng hình ảnh chữ số hiện tại là một số trong class digits cơ số 10.
+### Biên dịch
+Để chuẩn bị mô hình cho việc _training_, chúng ta cần chọn thêm ba yếu tố trong bước biên dịch:
+- [[optimizer]]: Cơ chế giúp mô hình tự cập nhật dựa trên dữ liệu huấn luyện để cải thiện hiệu suất.
+- [loss function](obsidian://open?vault=deep%20learning&file=1.%20What%20is%20deep%20learning%2FCh%C3%BA%20th%C3%ADch%2Floss%20function): Cách mà mô hình đo lường hiệu suất trên dữ liệu huấn luyện, từ đó điều chỉnh hướng đi đúng.
+- **Metrics to monitor**: Các chỉ số để giám sát trong quá trình huấn luyện và kiểm tra. Ở đây, chúng ta sẽ quan tâm đến độ chính xác (tỷ lệ hình ảnh được phân loại đúng).
+
+```
+model.compile(
+	optimizer="rmsprop", 
+	loss="sparse_categorical_crossentropy", 
+	metrics=["accuracy"])
+```
+
+### Chuẩn bị dữ liệu ảnh
+Trước khi _training_ , chúng ta sẽ tiền xử lý dữ liệu bằng cách định hình lại thành dạng mà mô hình dự kiến và chuẩn hóa nó để tất cả các giá trị nằm trong khoảng [0, 1]. Ban đầu, hình ảnh huấn luyện được lưu trữ trong một mảng có kích thước (60000, 28, 28) với kiểu dữ liệu uint8 và các giá trị nằm trong khoảng [0, 255]. Chúng ta sẽ chuyển đổi nó thành một mảng float32 có kích thước (60000, 28 * 28) với các giá trị nằm trong khoảng từ 0 đến 1.
+
+```
+train_images = train_images.reshape((60000, 28 * 28)) 
+train_images = train_images.astype("float32") / 255 
+test_images = test_images.reshape((10000, 28 * 28)) 
+test_images = test_images.astype("float32") / 255
+```
+
+### Điều chỉnh model
+Sử dụng `fit()` từ thư viện Keras để fit model với dữ liệu training của nó:
+
+```
+>>> model.fit(train_images, train_labels, epochs=5, batch_size=128) 
+Epoch 1/5 
+60000/60000 [===========================] - 5s - loss: 0.2524 - acc: 0.9273 
+Epoch 2/5 
+51328/60000 [=====================>.....] - ETA: 1s - loss: 0.1035 - acc: 0.9692
+```
+
+2 đại lượng loss và độ chính xác được hiển thị sau 2 chu kì, và độ chính xác dựa trên _training data_ là 98.9%
+
+### Sử dụng model để đưa ra dự đoán
+Giờ chúng ta có model đã được huấn luyện, chúng ta có thể sử dụng nó để đưa ra các dự đoán đối với dữ liệu ngoài như ở tập dữ liệu _test_
+
+```
+>>> test_digits = test_images[0:10] 
+>>> predictions = model.predict(test_digits) 
+>>> predictions[0] 
+array([ 1.0726176e-10, 1.6918376e-10, 6.1314843e-08, 8.4106023e-06, 
+		2.9967067e-11, 3.0331331e-09, 8.3651971e-14, 9.9999106e-01, 
+		2.6657624e-08, 3.8127661e-07], dtype=float32)
+```
+
+Mỗi số thứ i (`array[i]`) trong mảng tương ứng với xác suất rằng hình ảnh chữ số test_digits[0] thuộc lớp `i
+Ở test trên ta thấy được tại `array[7]` có xác suất cao nhất, nên theo model thì số ở trong ảnh phải là 7:
+
+```
+>>> predictions[0].argmax()
+7
+>>> predictions[0][7]
+0.99999106
+```
+
+Ta có thể kiểm tra xem nhãn của test có đúng không:
+```
+>>> test_labels[0]
+7
+```
+
+### Đánh giá model trên dữ liệu mới
+Để đánh giá model trong việc phân loại các số mà mô hình chưa từng thấy, chúng ta sẽ tính độ chính xác của model trên toàn bộ tập _test_
+```
+>>> test_loss, test_acc = model.evaluate(test_images, test_labels) 
+>>> print(f"test_acc: {test_acc}") 
+test_acc: 0.9785
+```
+
+97.85% là thấp hơn đáng kể so với 98.9%. Sự chênh lệch này là 1 ví dụ về [overfitting]() (model ML có xu hướng kém hiệu quả khi xử lý dữ liệu mới so với dữ liệu trên tệp _training_)
+
+### Tổng kết: 
+Thấy được cách xây dựng và huấn luyện một mạng neuron để phân loại chữ số viết tay chỉ với 15 dòng code python
