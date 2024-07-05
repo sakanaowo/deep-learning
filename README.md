@@ -1,3 +1,3 @@
 
- self-study deep learning usind obsidian
+ self-study deep learning using obsidian
  
