@@ -1,2 +1,3 @@
-# deep-learning
- self-study deep learning
+
+ self-study deep learning using obsidian
+ 
