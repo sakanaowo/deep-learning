@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md",
+                "file": "2. Mathematical building block of neural network/3.Tensor operations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md",
+                "file": "2. Mathematical building block of neural network/3.Tensor operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md",
+                "file": "2. Mathematical building block of neural network/3.Tensor operations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md"
+                "file": "2. Mathematical building block of neural network/3.Tensor operations.md"
               }
             }
           }
@@ -148,14 +148,16 @@
   },
   "active": "f98d3a235538b08e",
   "lastOpenFiles": [
+    "README.md",
+    "2. Mathematical building block of neural network/2.Data representations for neural network.md",
+    "2. Mathematical building block of neural network/3.Tensor operations.md",
+    "2. Mathematical building block of neural network/Chú thích/Thao tác của tensor.md",
+    "2. Mathematical building block of neural network/1.First look at neural network.md",
+    "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
     "Image/Pasted image 20240707155612.png",
     "Image/Pasted image 20240707154738.png",
     "2. Mathematical building block of neural network/Chú thích/Tensor.md",
-    "2. Mathematical building block of neural network/2.Data representations for neural network.md",
-    "2. Mathematical building block of neural network/Chú thích/Thao tác của tensor.md",
     "1. What is deep learning/Chú thích/evaluation function.md",
-    "2. Mathematical building block of neural network/1.First look at neural network.md",
-    "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
     "Image/Pasted image 20240707143738.png",
     "2. Mathematical building block of neural network/Mở đầu chương.md",
     "1. What is deep learning/A brief history of machine learning.md",
