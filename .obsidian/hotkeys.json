@@ -6,5 +6,15 @@
       ],
       "key": " "
     }
-  ]
+  ],
+  "workspace:goto-tab-3": [],
+  "editor:insert-mathblock": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "4"
+    }
+  ],
+  "workspace:goto-tab-4": []
 }
