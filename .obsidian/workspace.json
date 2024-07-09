@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematical building block of neural network/3.Tensor operations.md",
+                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematical building block of neural network/3.Tensor operations.md",
+                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematical building block of neural network/3.Tensor operations.md",
+                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematical building block of neural network/3.Tensor operations.md"
+                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md"
               }
             }
           }
@@ -146,26 +146,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f98d3a235538b08e",
+  "active": "abb6448e240469d0",
   "lastOpenFiles": [
-    "README.md",
     "2. Mathematical building block of neural network/2.Data representations for neural network.md",
+    "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
+    "1. What is deep learning/Chú thích/Backpropagation.md",
+    "1. What is deep learning/Chú thích/data points.md",
+    "1. What is deep learning/Chú thích/evaluation function.md",
+    "1. What is deep learning/Chú thích/loss function.md",
+    "1. What is deep learning/Chú thích/mạng neuron.md",
+    "1. What is deep learning/Chú thích/Unsupervised learning.md",
+    "1. What is deep learning/Chú thích/Supervised learning.md",
+    "1. What is deep learning/Chú thích/optimizer.md",
     "2. Mathematical building block of neural network/3.Tensor operations.md",
+    "Image/Pasted image 20240709164046.png",
+    "Image/Pasted image 20240709163613.png",
+    "Image/Pasted image 20240709163519.png",
+    "README.md",
     "2. Mathematical building block of neural network/Chú thích/Thao tác của tensor.md",
     "2. Mathematical building block of neural network/1.First look at neural network.md",
     "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
     "Image/Pasted image 20240707155612.png",
     "Image/Pasted image 20240707154738.png",
     "2. Mathematical building block of neural network/Chú thích/Tensor.md",
-    "1. What is deep learning/Chú thích/evaluation function.md",
     "Image/Pasted image 20240707143738.png",
     "2. Mathematical building block of neural network/Mở đầu chương.md",
     "1. What is deep learning/A brief history of machine learning.md",
-    "1. What is deep learning/Chú thích/optimizer.md",
     "Image/Pasted image 20240705144634.png",
-    "1. What is deep learning/Chú thích/loss function.md",
-    "1. What is deep learning/Chú thích/Supervised learning.md",
-    "[[mạng.md",
-    "1. What is deep learning/Chú thích/data points.md"
+    "[[mạng.md"
   ]
 }
