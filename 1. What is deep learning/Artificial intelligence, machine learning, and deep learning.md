@@ -1,4 +1,4 @@
-![[1.1 AI, machine learning and deep learning.png]]
+![](https://github.com/sakanaowo/idk-what-is-this/blob/image4deeplearning/1.1%20AI,%20machine%20learning%20and%20deep%20learning.png?raw=true)
 
 ### <span style="color:rgb(0, 176, 240)">1. Artificial Intelligence</span>
 - Một cách chính xác: AI được mô tả là _<span style="color:rgb(221, 95, 217)">nỗ lực tự động hóa các nhiệm vụ trí tuệ thường được thực hiện bởi con người</span>_
@@ -11,7 +11,7 @@
 	- [Supervisor learning](obsidian://open?vault=deep%20learning&file=1.%20What%20is%20deep%20learning%2FCh%C3%BA%20th%C3%ADch%2FSupervised%20learning) học có giám sát
 	- [Unsupervised learning](obsidian://open?vault=deep%20learning&file=1.%20What%20is%20deep%20learning%2FCh%C3%BA%20th%C3%ADch%2FUnsupervised%20learning): học không có giám sát
 - Mô hình ML:
-![[Pasted image 20240702220127.png]]
+![](https://github.com/sakanaowo/idk-what-is-this/blob/image4deeplearning/Pasted%20image%2020240702220127.png?raw=true)
 
 ### <span style="color:rgb(0, 176, 240)">3. Learning rules and representations from data</span>
 Để định nghĩa deep learning và hiểu sự khác biệt giữa deep learning với các phương pháp học máy khác, thì đầu tiên cần một số ý tưởng về chức năng của thuật toán chức năng của học máy(ML)
@@ -23,11 +23,11 @@ Một model ML <span style="color:rgb(221, 95, 217)">biến đổi dữ liệu �
 Vậy thì nên biểu diễn như thế nào? Ví dụ: Một hình ảnh có thể được mã hóa dạng RGB hoặc HSV(hue-saturation-value). Trong 1 số trường hợp thì một tác vụ có thể gặp khó khăn với định dạng RGB nhưng với HSV thì ngược lại như tăng độ bão hòa của ảnh,... Các model ML đều nhằm tìm kiếm các cách biểu diễn phù hợp cho dữ liệu đầu vào để xử lý tác vụ 
 Ví dụ cụ thể:
 - Xác định tọa độ của 1 điểm và dự đoán điểm này màu đen hay trắng
-![[Pasted image 20240703000901.png]]
+![](https://github.com/sakanaowo/idk-what-is-this/blob/image4deeplearning/Pasted%20image%2020240703000901.png?raw=true)
 Ở đây:
 - Đầu vào là tọa độ các điểm
 - Đầu ra dự kiến là màu sắc của các điểm
-Thứ chúng ta cần là 1 cách mới để biểu diễn dữ liệu sao cho các điểm trắng và đen tách biệt nhau, ví dụ như đổi trục tọa độ:![[Pasted image 20240703003020.png]]
+Thứ chúng ta cần là 1 cách mới để biểu diễn dữ liệu sao cho các điểm trắng và đen tách biệt nhau, ví dụ như đổi trục tọa độ:![](https://github.com/sakanaowo/idk-what-is-this/blob/image4deeplearning/Pasted%20image%2020240703003020.png?raw=true)
 Vấn đề phân loại đen/trắng có thể được diễn đạt thành một quy tắc đơn giản: "Các điểm đen là những điểm có x > 0," hoặc "Các điểm trắng là những điểm có x < 0."
 Các <span style="color:rgb(221, 95, 217)">thuật toán học máy thường không sáng tạo</span> trong việc tìm kiếm các phép biến đổi này; chúng chỉ <span style="color:rgb(221, 95, 217)">đơn giản là tìm kiếm qua một tập hợp các thao tác được xác định trước, gọi là không gian giả thuyết</span>. Ví dụ, không gian của tất cả các phép thay đổi tọa độ có thể có sẽ là không gian giả thuyết của chúng ta trong ví dụ phân loại tọa độ 2D.
 Vậy <span style="color:rgb(221, 95, 217)">học máy</span> là gì,1 cách ngắn gọn: <span style="color:rgb(221, 95, 217)">tìm kiếm các biểu diễn và quy tắc hữu ích trên một số dữ liệu đầu vào, trong một không gian khả năng được xác định trước, sử dụng sự hướng dẫn từ một tín hiệu phản hồi</span>. Ý tưởng đơn giản này cho phép giải quyết một loạt các tác vụ cần trí tuệ, từ nhận dạng giọng nói đến lái xe tự hành.
@@ -40,10 +40,10 @@ Vậy <span style="color:rgb(221, 95, 217)">học máy</span> là gì,1 cách ng
 ### <span style="color:rgb(0, 176, 240)">5.Understanding how deep learning works, in three figures</span> 
 Các <span style="color:rgb(221, 95, 217)">trọng số của một lớp</span> trong mạng neural <span style="color:rgb(221, 95, 217)">lưu trữ cách mà lớp đó xử lý dữ liệu đầu vào</span>. Học(learning) trong ngữ cảnh này có nghĩa là <span style="color:rgb(66, 255, 242)">tìm ra các giá trị cho các trọng số của tất cả các lớp trong mạng để mạng có thể ánh xạ chính xác các đầu vào với mục tiêu liên quan</span>. 
 Một mạng neuron có thể chứa hàng chục triệu tham số, và việc tìm ra các giá trị chính xác cho tất cả chúng là một nhiệm vụ phức tạp vì thay đổi một tham số sẽ ảnh hưởng đến hành vi của tất cả các tham số khác.
-![[Pasted image 20240704002332.png]]
+![](https://github.com/sakanaowo/idk-what-is-this/blob/image4deeplearning/Pasted%20image%2020240704002332.png?raw=true)
 
 Để kiểm soát đầu ra của một mạng neural, trước tiên cần đo lường được khoảng cách giữa đầu ra dự đoán của mạng và kết quả mục tiêu mong đợi. Việc này được thực hiện thông qua [loss function](obsidian://open?vault=deep%20learning&file=1.%20What%20is%20deep%20learning%2FCh%C3%BA%20th%C3%ADch%2Floss%20function) của mạng, còn được gọi là hàm mục tiêu hoặc hàm chi phí. Loss function nhận các dự đoán của mạng và kết quả thực tế, sau đó tính ra _loss score_, cho biết mạng đã hoạt động như thế nào đối với ví dụ cụ thể đó.
-![[Pasted image 20240704003607.png]]
+![](https://github.com/sakanaowo/idk-what-is-this/blob/image4deeplearning/Pasted%20image%2020240704003607.png?raw=true)
 
 Trick cơ bản trong học sâu là sử dụng _loss score_ để điều chỉnh giá trị của các trọng số, nhằm giảm hao hụt cho từng ví dụ cụ thể. Quá trình điều chỉnh này do [[optimizer]] (bộ tối ưu hóa) thực hiện, triển khai thuật toán[[ Backpropagation ]] (truyền ngược của sai số), thuật toán cốt lõi của học sâu.
-![[Pasted image 20240704004416.png]]
+![](https://github.com/sakanaowo/idk-what-is-this/blob/image4deeplearning/Pasted%20image%2020240704004416.png?raw=true)

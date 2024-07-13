@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
+                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
+                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
+                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md"
+                "file": "2. Mathematical building block of neural network/2.Data representations for neural network.md"
               }
             }
           }
@@ -148,17 +148,25 @@
   },
   "active": "abb6448e240469d0",
   "lastOpenFiles": [
-    "Pasted image 20240710004558.png",
-    "Image/Pasted image 20240710004248.png",
-    "Image/Pasted image 20240710002311.png",
     "2. Mathematical building block of neural network/3.Tensor operations.md",
     "2. Mathematical building block of neural network/4. Tối ưu hóa Gradient-based.md",
-    "Image/Pasted image 20240710001451.png",
-    "Pasted image 20240710001156.png",
-    "1. What is deep learning/Chú thích/optimizer.md",
+    "().md",
+    "2. Mathematical building block of neural network/2.Data representations for neural network.md",
+    "2. Mathematical building block of neural network/1.First look at neural network.md",
     "1. What is deep learning/Artificial intelligence, machine learning, and deep learning.md",
     "1. What is deep learning/A brief history of machine learning.md",
-    "2. Mathematical building block of neural network/2.Data representations for neural network.md",
+    "Image/idk-what-is-this/Pasted image 20240704003607.png",
+    "Image/idk-what-is-this/Pasted image 20240704003224.png",
+    "Image/idk-what-is-this/Pasted image 20240704002332.png",
+    "Image/idk-what-is-this/Pasted image 20240703003020.png",
+    "Image/idk-what-is-this/Pasted image 20240703000901.png",
+    "Image/idk-what-is-this/Pasted image 20240702220127.png",
+    "Image/idk-what-is-this/1.1 AI, machine learning and deep learning.png",
+    "Image/idk-what-is-this/Pasted image 20240710004558.png",
+    "Image/idk-what-is-this/Pasted image 20240710004248.png",
+    "Image/idk-what-is-this/Pasted image 20240710002311.png",
+    "Image/idk-what-is-this",
+    "1. What is deep learning/Chú thích/optimizer.md",
     "1. What is deep learning/Chú thích/Backpropagation.md",
     "1. What is deep learning/Chú thích/data points.md",
     "1. What is deep learning/Chú thích/evaluation function.md",
@@ -166,16 +174,9 @@
     "1. What is deep learning/Chú thích/mạng neuron.md",
     "1. What is deep learning/Chú thích/Unsupervised learning.md",
     "1. What is deep learning/Chú thích/Supervised learning.md",
-    "Image/Pasted image 20240709164046.png",
-    "Image/Pasted image 20240709163613.png",
-    "Image/Pasted image 20240709163519.png",
     "README.md",
     "2. Mathematical building block of neural network/Chú thích/Thao tác của tensor.md",
-    "2. Mathematical building block of neural network/1.First look at neural network.md",
-    "Image/Pasted image 20240707155612.png",
-    "Image/Pasted image 20240707154738.png",
     "2. Mathematical building block of neural network/Chú thích/Tensor.md",
-    "Image/Pasted image 20240707143738.png",
     "2. Mathematical building block of neural network/Mở đầu chương.md",
     "[[mạng.md"
   ]
